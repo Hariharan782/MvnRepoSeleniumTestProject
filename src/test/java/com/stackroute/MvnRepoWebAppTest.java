@@ -61,6 +61,8 @@ public class MvnRepoWebAppTest {
 		driver.manage().window().maximize();
 		driver.get("https://mvnrepository.com/");
 		
+		driver.switchTo().alert().accept();
+		
 		String searchText = "selenium server";
 		
 		WebElement searchField = driver.findElement(By.id("query"));
